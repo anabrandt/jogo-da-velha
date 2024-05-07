@@ -27,13 +27,12 @@ const CadastroScreen = ({ navigation }) => {
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                // Lidar com erros de cadastro, se necessário
             });
     }
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Cadastro</Text>
+            <Text style={styles.title}>Login</Text>
             <View>
                 <TextInput
                     style={styles.input}
@@ -49,10 +48,11 @@ const CadastroScreen = ({ navigation }) => {
                     onChangeText={changePassword}
                 />
             </View>
+
             <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('Cadastro')}>
-
+                onPress={() => navigation.navigate('Game')}>
+            
                 <Text style={styles.buttonText}>Cadastrar</Text>
             </TouchableOpacity>
         </View>

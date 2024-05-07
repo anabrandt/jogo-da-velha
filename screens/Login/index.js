@@ -21,7 +21,7 @@ const LoginScreen = ({ navigation }) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => navigation.navigate('Game')}>
-                    <Text style={styles.buttonText}>Cadastro</Text>
+                    <Text style={styles.buttonText}>Entrar</Text>
                 </TouchableOpacity>
             })
             .catch((error) => {
