@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TouchableOpacity, View, Text, TextInput, Button, StyleSheet } from 'react-native';
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const CadastroScreen = ({ navigation }) => {
     const [formInputs, setFormInputs] = useState({ email: '', password: '' });
